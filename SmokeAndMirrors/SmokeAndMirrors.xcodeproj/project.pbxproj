@@ -24,7 +24,6 @@
 		7194C18D22C25A02001E9656 /* RDMirror.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7194C18B22C25A02001E9656 /* RDMirror.mm */; };
 		71B4323822D0E8380046463D /* RDInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B4323622D0E8380046463D /* RDInvocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71B4323922D0E8380046463D /* RDInvocation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71B4323722D0E8380046463D /* RDInvocation.mm */; };
-		71B4323C22D0E8EF0046463D /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B4323B22D0E8CE0046463D /* libffi.tbd */; };
 		71CEE7CE22E5364D001269D8 /* RDValueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CEE7CD22E5364D001269D8 /* RDValueTests.m */; };
 		71D06DA822C26CAF00568CAE /* RDMirrorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D06DA722C26CAF00568CAE /* RDMirrorPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		71D06DAB22C2B35000568CAE /* RDType.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D06DA922C2B35000568CAE /* RDType.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +41,7 @@
 		71EEE31B22ED999600CDC259 /* RDClassBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 71EEE31922ED999600CDC259 /* RDClassBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71EEE31C22ED999600CDC259 /* RDClassBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71EEE31A22ED999600CDC259 /* RDClassBuilder.mm */; };
 		71EEE31E22EDA15100CDC259 /* RDClassBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EEE31D22EDA15100CDC259 /* RDClassBuilderTests.m */; };
+		D54B064A253EFABE00007A2F /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B05D7253EFA2900007A2F /* libffi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7194C16E22C2564D001E9656;
 			remoteInfo = SmokeAndMirrors;
+		};
+		D54B05D6253EFA2900007A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
+		};
+		D54B05D8253EFA2900007A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDB52FC51F6144FA00AA92E6;
+			remoteInfo = "libffi-tvOS";
+		};
+		D54B05DA253EFA2900007A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1911849DF510010F42D;
+			remoteInfo = "libffi-Mac";
+		};
+		D54B05DC253EFA2900007A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDDB2F621F5D846400EF414E;
+			remoteInfo = "libffi-static-Mac";
+		};
+		D54B05E4253EFA3700007A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB13B1651849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -95,6 +130,7 @@
 		71EEE31922ED999600CDC259 /* RDClassBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDClassBuilder.h; sourceTree = "<group>"; };
 		71EEE31A22ED999600CDC259 /* RDClassBuilder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RDClassBuilder.mm; sourceTree = "<group>"; };
 		71EEE31D22EDA15100CDC259 /* RDClassBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDClassBuilderTests.m; sourceTree = "<group>"; };
+		D54B05CF253EFA2900007A2F /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = ../libffi/libffi.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B4323C22D0E8EF0046463D /* libffi.tbd in Frameworks */,
+				D54B064A253EFABE00007A2F /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +156,7 @@
 		7194C16522C2564D001E9656 = {
 			isa = PBXGroup;
 			children = (
+				D54B05CF253EFA2900007A2F /* libffi.xcodeproj */,
 				7194C17122C2564D001E9656 /* SmokeAndMirrors */,
 				7194C17C22C2564E001E9656 /* SmokeAndMirrorsTests */,
 				7194C17022C2564D001E9656 /* Products */,
@@ -211,6 +248,17 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
+		D54B05D0253EFA2900007A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D54B05D7253EFA2900007A2F /* libffi.a */,
+				D54B05D9253EFA2900007A2F /* libffi.a */,
+				D54B05DB253EFA2900007A2F /* ffi.dylib */,
+				D54B05DD253EFA2900007A2F /* libffi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -244,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7194C18322C2564E001E9656 /* Build configuration list for PBXNativeTarget "SmokeAndMirrors" */;
 			buildPhases = (
+				D54B06C0253F01F800007A2F /* ShellScript */,
 				7194C16A22C2564D001E9656 /* Headers */,
 				7194C16B22C2564D001E9656 /* Sources */,
 				7194C16C22C2564D001E9656 /* Frameworks */,
@@ -252,6 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D54B05E5253EFA3700007A2F /* PBXTargetDependency */,
 			);
 			name = SmokeAndMirrors;
 			productName = SmokeAndMirrors;
@@ -304,6 +354,12 @@
 			mainGroup = 7194C16522C2564D001E9656;
 			productRefGroup = 7194C17022C2564D001E9656 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D54B05D0253EFA2900007A2F /* Products */;
+					ProjectRef = D54B05CF253EFA2900007A2F /* libffi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7194C16E22C2564D001E9656 /* SmokeAndMirrors */,
@@ -311,6 +367,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D54B05D7253EFA2900007A2F /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D54B05D6253EFA2900007A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D54B05D9253EFA2900007A2F /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D54B05D8253EFA2900007A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D54B05DB253EFA2900007A2F /* ffi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ffi.dylib;
+			remoteRef = D54B05DA253EFA2900007A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D54B05DD253EFA2900007A2F /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libffi.a;
+			remoteRef = D54B05DC253EFA2900007A2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7194C16D22C2564D001E9656 /* Resources */ = {
@@ -328,6 +415,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D54B06C0253F01F800007A2F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7194C16B22C2564D001E9656 /* Sources */ = {
@@ -368,6 +475,11 @@
 			isa = PBXTargetDependency;
 			target = 7194C16E22C2564D001E9656 /* SmokeAndMirrors */;
 			targetProxy = 7194C17A22C2564E001E9656 /* PBXContainerItemProxy */;
+		};
+		D54B05E5253EFA3700007A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libffi-iOS";
+			targetProxy = D54B05E4253EFA3700007A2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -510,6 +622,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/ffi/";
 				INFOPLIST_FILE = SmokeAndMirrors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -521,6 +634,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.gleba.SmokeAndMirrors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -535,6 +650,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/ffi/";
 				INFOPLIST_FILE = SmokeAndMirrors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -546,6 +662,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.gleba.SmokeAndMirrors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
